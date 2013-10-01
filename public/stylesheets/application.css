@@ -1,3 +1,25 @@
+html, body {height: 100%;}
+
+#wrap {min-height: 100%;}
+
+#main {overflow:auto;
+	padding-bottom: 150px;}  /* must be same height as the footer */
+
+footer {position: fixed;
+	bottom: 0; /* negative value of footer height */
+	height: 150px;
+	width: 100%;
+	color: #fff;} 
+
+/*Opera Fix*/
+body:before {
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/
+}
+
 body {
       font-family: 'Helvetica Neue';
       margin: 15px 0 0 30px;
@@ -31,13 +53,13 @@ h1{
 
 h3{
 	color: white;
-	margin: 15px 50px;
+	margin: auto;
 	font-family: Helvetica;
 	font-weight:400;
-	background-color: 99FF33;
+	background-color: purple;
 	border-radius: 10px;
 	text-decoration: none;
-	
+	width: 60;
 	letter-spacing: 0.1em;
 	text-align: center;
 	opacity: 1;
@@ -65,3 +87,28 @@ button {
 button:hover{
 	opacity: 0.7;
 }
+
+footer {
+  display: flex;
+  background-color: rgba(0,0,0,0.5);
+}
+
+footer > * {
+  margin: auto inherit;
+  }
+
+footer img {
+/* http://stackoverflow.com/questions/10658475/3px-extra-height-on-a-div-with-an-image-inside-it */
+vertical-align: bottom;
+}
+
+footer #technologies {
+-webkit-flex: 1;
+flex: 1;
+}
+
+footer p {
+padding: 5px 25px;
+}
+
+
