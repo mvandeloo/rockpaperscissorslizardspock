@@ -1,25 +1,43 @@
 body {
+      font-family: 'Helvetica Neue';
+      margin: 15px 0 0 30px;
+      background-image:url('./img/galaxy.jpg');
+    }
+
+.choices {
 	text-align: center;
-	font-family: Arial;
-	background-image:url('http://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Pierre_ciseaux_feuille_l%C3%A9zard_spock_aligned.svg/220px-Pierre_ciseaux_feuille_l%C3%A9zard_spock_aligned.svg.png');
-	color: white;
-}
-
-
-h1{
-     font-size: 30em;
-     font-weight: 800;
-     font-family: Helvetica;
-}
-
-a{
+  	margin-left: auto;
+  	margin-right: auto;
+}    
+.choices img {
+	height: 150px;
 	color: white;
 	font-family: Helvetica;
 	font-weight:400;
-	background-color: gray;
+	background-color: white;
 	border-radius: 10px;
 	text-decoration: none;
 	padding: 0.5em 0.7em;
+	opacity: 1;
+}
+
+h1{
+     font-size: 30px;
+     font-weight: 800;
+     font-family: Helvetica;
+     color: white;
+     text-align: center;
+}
+
+h3{
+	color: white;
+	margin: 15px 50px;
+	font-family: Helvetica;
+	font-weight:400;
+	background-color: 99FF33;
+	border-radius: 10px;
+	text-decoration: none;
+	
 	letter-spacing: 0.1em;
 	text-align: center;
 	opacity: 1;
